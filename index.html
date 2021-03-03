@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="body-container">
+      <section id="street-finder">
+        <div id="streets-top">
+          <h4 id="street-title">Street Finder</h4>
+          <p class="streets-paragraph body-main">
+            Use the helpful buttons below to find the destination of your next walk. If you’re feeling
+            adventurous we’ve also added a small task you might or might not want to do.
+          </p>
+        </div>
+        <div id="streets-main">
+          <div id="streets-map">
+            <div id="mapImage">
+              <img id="nunheadImg" src="images/nunheadmap.png" alt="nunhead" />
+              <a id="open-in-maps-link" href="#?">
+                <button id="open-in-maps-btn" class="caption" type="button">Open in Maps</button>
+              </a>
+            </div>
+          </div>
+          <div id="streets-picker" class="caption">
+            <div class="interactive-section">
+              <p id="press-go-text">Press GO! below to generate a new street and task.</p>
+              <p class="instructText">Go to:</p>
+              <h4 id="returnedStreet"><span id="injectedStreet"></span></h4>
+              <p class="instructText">Do:</p>
+              <h4 id="returnedTask"><span id="injectedTask"></span></h4>
+            </div>
+            <div id="location-go">
+              <div class="dropdown">
+                <button id="dropbtn" class="caption">Select location</button>
+                <div class="dropdown-content caption">
+                  <a type="button" id="peckhamBtn" href="#">Peckham</a>
+                  <a type="button" id="eastDulwichBtn" href="#">East Dulwich</a>
+                </div>
+              </div>
+              <button class="caption" id="go-btn">GO!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="data/streets_peckham.json"></script>
+    </div>
+  </body>
+</html>
