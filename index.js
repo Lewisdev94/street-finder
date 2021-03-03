@@ -14,7 +14,7 @@ let peckhamList = []
 let tasksList = []
 let dulwichList = []
 
-fetch('../data/streets_peckham.json')
+fetch('data/streets_peckham.json')
   .then(function (resp) {
     return resp.json()
   })
@@ -22,7 +22,7 @@ fetch('../data/streets_peckham.json')
     return (peckhamList = data)
   })
 
-fetch('../data/tasks.json')
+fetch('data/tasks.json')
   .then(function (resp) {
     return resp.json()
   })
@@ -30,7 +30,7 @@ fetch('../data/tasks.json')
     return (tasksList = data)
   })
 
-fetch('../data/eastDulwichStreets.json')
+fetch('data/eastDulwichStreets.json')
   .then(function (resp) {
     return resp.json()
   })
