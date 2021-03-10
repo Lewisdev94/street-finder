@@ -78,8 +78,8 @@ myButton.addEventListener('click', function (event) {
 
   injectedStreet.innerHTML = finalSelection
   injectedTask.innerHTML = finalSelectionTasks
-  let mapRef = 'https://www.google.com/maps/search/?api=1&query=centurylink+field'
-  // 'https://google.com/maps/search/?api=' + finalSelection + ', +SE15'
+  let mapRef = `https://www.google.com/maps/search/?api=1&query=${finalSelection}%2CSE15`
+
   openInMaps.href = mapRef
   event.preventDefault()
 })
@@ -87,3 +87,5 @@ myButton.addEventListener('click', function (event) {
 // https://www.google.com/maps/search/?api=1&City+Hall%2C+New+York%2C+NY
 
 // For example, some parameters use a pipe character (|) as a separator, which you must encode as %7C in the final URL. Other parameters use comma-separated values, such as latitude/longitude coordinates or City, State. You must encode the comma as %2C. Encode spaces with %20, or replace them with a plus sign (+).
+
+// 'https://google.com/maps/search/?api=' + finalSelection + ', +SE15'
