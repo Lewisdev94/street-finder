@@ -78,7 +78,9 @@ myButton.addEventListener('click', function (event) {
 
   injectedStreet.innerHTML = finalSelection
   injectedTask.innerHTML = finalSelectionTasks
-  let mapRef = 'https://maps.google.com/maps/place/' + finalSelection + ', +SE15'
+  let mapRef = 'https://google.com/maps/search/' + finalSelection + ', +SE15'
   openInMaps.href = mapRef
   event.preventDefault()
 })
+
+// https://www.google.com/maps/search/?api=1&parameters
